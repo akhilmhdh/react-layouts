@@ -1,7 +1,7 @@
-import HelloWorld from "./index";
+import HelloWorld from './index';
 
 export default {
-    title: "Home",
+    title: 'Home',
 };
 
-export const Primary = () => <HelloWorld />;
+export const Primary = (): JSX.Element => <HelloWorld />;
