@@ -8,7 +8,9 @@
         "build"
     ],
     "scripts": {
-        "build": "rollup -c"
+        "build": "rollup -c",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
     },
     "keywords": [
         "react",
@@ -19,12 +21,16 @@
     "author": "akhilmhdh",
     "license": "ISC",
     "devDependencies": {
+        "@babel/core": "^7.12.10",
         "@rollup/plugin-commonjs": "^17.0.0",
         "@rollup/plugin-node-resolve": "^11.1.0",
+        "@storybook/addon-actions": "^6.1.15",
+        "@storybook/addon-essentials": "^6.1.15",
+        "@storybook/addon-links": "^6.1.15",
+        "@storybook/react": "^6.1.15",
         "@types/react": "^17.0.0",
+        "babel-loader": "^8.2.2",
         "node-sass": "^5.0.0",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
         "rollup": "^2.38.0",
         "rollup-plugin-peer-deps-external": "^2.2.4",
         "rollup-plugin-postcss": "^4.0.0",
@@ -34,5 +40,6 @@
     "peerDependencies": {
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
-    }
+    },
+    "dependencies": {}
 }
